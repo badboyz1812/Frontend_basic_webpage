@@ -1,0 +1,49 @@
+<input id = "num1">
+<input id = "num2">
+<button onclick = "add()">Addition</button>
+<button onclick = "sub()">Subtraction</button>
+<button onclick = "mul()">Multiplication</button>
+<button onclick = "div()">Divison</button>
+<button onclick = "Mod()">Modulus</button>
+<p id ="result">Output</p>
+<script>
+    var value1 = document.getElementById("num1")
+    var value2 = document.getElementById("num2")
+    var Result = document.getElementById("result")
+
+    function add(){
+        var box1 = Number(value1.value)
+        var box2 = Number(value2.value)
+        var total = box1 + box2
+
+        Result.textContent = total
+    }
+    function sub(){
+        var box1 = Number(value1.value)
+        var box2 = Number(value2.value)
+        var total = box1 - box2
+        
+        Result.textContent = total
+    }
+    function mul(){
+        var box1 = Number(value1.value)
+        var box2 = Number(value2.value)
+        var total = box1 * box2
+        
+        Result.textContent = total
+    }
+    function div(){
+        var box1 = Number(value1.value)
+        var box2 = Number(value2.value)
+        var total  = box1/box2
+
+        Result.textContent = total
+    }
+
+    function Mod(){
+        var box1 = Number(value1.value)
+        var box2 = Number(value2.value)
+        var total = box1 % box2
+        Result.textContent = total
+    }
+</script>
